@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddlu02jxhf1vs"]
+
+[ext_resource type="Script" path="res://victory_end.gd" id="1_a7y0n"]
+[ext_resource type="Texture2D" uid="uid://due7yueqamtch" path="res://assets/victory_screen.png" id="1_tnw4i"]
+
+[node name="Victory_End" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a7y0n")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_tnw4i")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 447.0
+offset_right = 756.0
+offset_bottom = 529.0
+theme_override_font_sizes/font_size = 25
+text = "Leave the circle"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
