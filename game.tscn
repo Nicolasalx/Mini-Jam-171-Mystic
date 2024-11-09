@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://s6xi1i2qt1h1" path="res://assets/case_4.png" id="6_nuoi0"]
 [ext_resource type="Texture2D" uid="uid://bwt308r0jidbj" path="res://assets/case_5.png" id="7_psdhd"]
 
-[sub_resource type="Animation" id="Animation_gn2dy"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_1kyrk"]
+resource_name = "Case_1_Animation"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -17,58 +17,10 @@ tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.233333, 0.666667),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 0.623529)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../TextureButton2:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0.27451)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../TextureButton3:modulate")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0.27451)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../TextureButton4:modulate")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0.27451)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("../TextureButton5:modulate")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0.27451)]
+"values": [Color(1, 1, 1, 0.27451), Color(1, 1, 1, 1), Color(1, 1, 1, 0.27451)]
 }
 
 [sub_resource type="Animation" id="Animation_1uoch"]
@@ -131,8 +83,8 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 0.27451), Color(1, 1, 1, 1), Color(1, 1, 1, 0.27451)]
 }
 
-[sub_resource type="Animation" id="Animation_1kyrk"]
-resource_name = "Case_1_Animation"
+[sub_resource type="Animation" id="Animation_gn2dy"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -140,10 +92,82 @@ tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.233333, 0.666667),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 0.27451), Color(1, 1, 1, 1), Color(1, 1, 1, 0.27451)]
+"values": [Color(1, 1, 1, 0.623529)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../TextureButton2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.27451)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../TextureButton3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.27451)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../TextureButton4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.27451)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../TextureButton5:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.27451)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Watch:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Play:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rm63x"]
@@ -168,63 +192,83 @@ texture = ExtResource("1_oqtw6")
 expand_mode = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect"]
-root_node = NodePath("../TextureButton")
+root_node = NodePath("../TextureButton1")
 libraries = {
 "": SubResource("AnimationLibrary_rm63x")
 }
 
-[node name="TextureButton" type="TextureButton" parent="TextureRect"]
+[node name="TextureButton1" type="TextureButton" parent="TextureRect"]
 modulate = Color(1, 1, 1, 0.623529)
-layout_mode = 0
-offset_left = 382.0
-offset_top = 73.0
-offset_right = 572.0
-offset_bottom = 266.0
+offset_left = 372.0
+offset_top = 109.0
+offset_right = 575.0
+offset_bottom = 315.0
 texture_normal = ExtResource("2_51qri")
 script = SubResource("GDScript_ohcqx")
 
 [node name="TextureButton2" type="TextureButton" parent="TextureRect"]
 modulate = Color(1, 1, 1, 0.27451)
 layout_mode = 0
-offset_left = 637.0
-offset_top = 76.0
-offset_right = 833.0
-offset_bottom = 280.0
+offset_left = 597.0
+offset_top = 106.0
+offset_right = 793.0
+offset_bottom = 310.0
 texture_normal = ExtResource("4_18bsc")
 script = SubResource("GDScript_ohcqx")
 
 [node name="TextureButton3" type="TextureButton" parent="TextureRect"]
 modulate = Color(1, 1, 1, 0.27451)
 layout_mode = 0
-offset_left = 843.0
-offset_top = 304.0
-offset_right = 1034.0
-offset_bottom = 497.0
+offset_left = 706.0
+offset_top = 338.0
+offset_right = 897.0
+offset_bottom = 531.0
 texture_normal = ExtResource("5_g2pgj")
 script = SubResource("GDScript_ohcqx")
 
 [node name="TextureButton4" type="TextureButton" parent="TextureRect"]
 modulate = Color(1, 1, 1, 0.27451)
 layout_mode = 0
-offset_left = 535.0
-offset_top = 398.0
-offset_right = 725.0
-offset_bottom = 591.0
+offset_left = 488.0
+offset_top = 415.0
+offset_right = 678.0
+offset_bottom = 608.0
 texture_normal = ExtResource("6_nuoi0")
 script = SubResource("GDScript_ohcqx")
 
 [node name="TextureButton5" type="TextureButton" parent="TextureRect"]
 modulate = Color(1, 1, 1, 0.27451)
 layout_mode = 0
-offset_left = 222.0
-offset_top = 306.0
-offset_right = 412.0
-offset_bottom = 499.0
+offset_left = 243.0
+offset_top = 345.0
+offset_right = 433.0
+offset_bottom = 538.0
 texture_normal = ExtResource("7_psdhd")
 script = SubResource("GDScript_ohcqx")
 
-[connection signal="current_animation_changed" from="TextureRect/AnimationPlayer" to="TextureRect/TextureButton" method="_on_animation_player_current_animation_changed"]
-[connection signal="pressed" from="TextureRect/TextureButton" to="." method="_on_texture_button_pressed"]
+[node name="Watch" type="RichTextLabel" parent="TextureRect"]
+visible = false
+layout_mode = 0
+offset_left = 228.0
+offset_top = 35.0
+offset_right = 1057.0
+offset_bottom = 122.0
+theme_override_font_sizes/normal_font_size = 40
+text = "Keeps the order in which items appear"
+
+[node name="Play" type="RichTextLabel" parent="TextureRect"]
+visible = false
+layout_mode = 0
+offset_left = 100.0
+offset_top = 33.0
+offset_right = 1117.0
+offset_bottom = 171.0
+theme_override_font_sizes/normal_font_size = 40
+text = "Press the buttons in the same order as they appear"
+autowrap_mode = 2
+
+[connection signal="current_animation_changed" from="TextureRect/AnimationPlayer" to="TextureRect/TextureButton1" method="_on_animation_player_current_animation_changed"]
+[connection signal="pressed" from="TextureRect/TextureButton1" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="TextureRect/TextureButton2" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="TextureRect/TextureButton3" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="TextureRect/TextureButton4" to="." method="_on_texture_button_pressed"]
