@@ -199,6 +199,7 @@ libraries = {
 
 [node name="TextureButton1" type="TextureButton" parent="TextureRect"]
 modulate = Color(1, 1, 1, 0.623529)
+layout_mode = 0
 offset_left = 372.0
 offset_top = 109.0
 offset_right = 575.0
