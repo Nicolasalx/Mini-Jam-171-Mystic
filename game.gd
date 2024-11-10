@@ -13,7 +13,8 @@ func _ready():
 func main():
 	await animation_level(nb_case_level_1)
 	while not level_completed:
-		await get_tree().process_frame
+		if (get_tree() != null):
+			await get_tree().process_frame
 	await animation_level(nb_case_level_2)
 
 func add_case_to_list(buttons_list):
