@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://ynxtb5qrltmu"]
+[gd_scene load_steps=18 format=3 uid="uid://ynxtb5qrltmu"]
 
 [ext_resource type="Texture2D" uid="uid://dk6wfful54t7l" path="res://assets/table.png" id="1_oqtw6"]
 [ext_resource type="Script" path="res://game.gd" id="1_te4l8"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://4dmjeus8m8kh" path="res://assets/case_3.png" id="5_g2pgj"]
 [ext_resource type="Texture2D" uid="uid://s6xi1i2qt1h1" path="res://assets/case_4.png" id="6_nuoi0"]
 [ext_resource type="Texture2D" uid="uid://bwt308r0jidbj" path="res://assets/case_5.png" id="7_psdhd"]
+[ext_resource type="FontFile" uid="uid://ywjvv5gcd2rh" path="res://assets/impact.ttf" id="8_omwu0"]
 
 [sub_resource type="Animation" id="Animation_1kyrk"]
 resource_name = "Case_1_Animation"
@@ -17,7 +18,7 @@ tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.233333, 0.666667),
+"times": PackedFloat32Array(-0.0333333, 0.233333, 0.666667),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0.27451), Color(1, 1, 1, 1), Color(1, 1, 1, 0.27451)]
@@ -169,6 +170,34 @@ tracks/6/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../LevelUp:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_puafo"]
+resource_name = "level_up"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../LevelUp:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 1.96667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rm63x"]
 _data = {
@@ -177,7 +206,8 @@ _data = {
 "Case_3_Animation": SubResource("Animation_3wbt3"),
 "Case_4_Animation": SubResource("Animation_ujhcg"),
 "Case_5_Animation": SubResource("Animation_yckhr"),
-"RESET": SubResource("Animation_gn2dy")
+"RESET": SubResource("Animation_gn2dy"),
+"level_up": SubResource("Animation_puafo")
 }
 
 [sub_resource type="GDScript" id="GDScript_ohcqx"]
@@ -199,6 +229,7 @@ libraries = {
 
 [node name="TextureButton1" type="TextureButton" parent="TextureRect"]
 modulate = Color(1, 1, 1, 0.623529)
+layout_mode = 0
 offset_left = 372.0
 offset_top = 109.0
 offset_right = 575.0
@@ -266,6 +297,17 @@ offset_bottom = 171.0
 theme_override_font_sizes/normal_font_size = 40
 text = "Press the buttons in the same order as they appear"
 autowrap_mode = 2
+
+[node name="LevelUp" type="RichTextLabel" parent="TextureRect"]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 287.0
+offset_right = 1141.0
+offset_bottom = 491.0
+theme_override_fonts/normal_font = ExtResource("8_omwu0")
+theme_override_font_sizes/bold_italics_font_size = 20
+theme_override_font_sizes/normal_font_size = 64
+text = "Nice you level up !"
 
 [connection signal="current_animation_changed" from="TextureRect/AnimationPlayer" to="TextureRect/TextureButton1" method="_on_animation_player_current_animation_changed"]
 [connection signal="pressed" from="TextureRect/TextureButton1" to="." method="_on_texture_button_pressed"]
