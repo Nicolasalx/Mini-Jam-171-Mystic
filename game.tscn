@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ynxtb5qrltmu"]
+[gd_scene load_steps=19 format=3 uid="uid://ynxtb5qrltmu"]
 
 [ext_resource type="Texture2D" uid="uid://dk6wfful54t7l" path="res://assets/table.png" id="1_oqtw6"]
 [ext_resource type="Script" path="res://game.gd" id="1_te4l8"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://s6xi1i2qt1h1" path="res://assets/case_4.png" id="6_nuoi0"]
 [ext_resource type="Texture2D" uid="uid://bwt308r0jidbj" path="res://assets/case_5.png" id="7_psdhd"]
 [ext_resource type="FontFile" uid="uid://ywjvv5gcd2rh" path="res://assets/impact.ttf" id="8_omwu0"]
+[ext_resource type="AudioStream" uid="uid://dyo4drx41msmk" path="res://assets/background_song.mp3" id="9_5p2et"]
 
 [sub_resource type="Animation" id="Animation_1kyrk"]
 resource_name = "Case_1_Animation"
@@ -308,6 +309,10 @@ theme_override_fonts/normal_font = ExtResource("8_omwu0")
 theme_override_font_sizes/bold_italics_font_size = 20
 theme_override_font_sizes/normal_font_size = 64
 text = "Nice you level up !"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_5p2et")
+autoplay = true
 
 [connection signal="current_animation_changed" from="TextureRect/AnimationPlayer" to="TextureRect/TextureButton1" method="_on_animation_player_current_animation_changed"]
 [connection signal="pressed" from="TextureRect/TextureButton1" to="." method="_on_texture_button_pressed"]
