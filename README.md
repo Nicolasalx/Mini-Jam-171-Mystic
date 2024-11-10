@@ -1,15 +1,10 @@
 # Mini-Jam-171-Mystic
 ---
 
-## 📜 Game Overview
-
----
-
 ## 🎮 How to Play
 
-1. **Controls:**
-   - **Move:** Use the arrow keys or ZQSD to move.
-   - **Attack:** Press the spacebar to unleash a magical attack.
+We created a game like "simom" where you need to replicate the showed cell in front of you.
+It's a memory game.
 
 ---
 
