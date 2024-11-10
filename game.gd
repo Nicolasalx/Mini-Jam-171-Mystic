@@ -4,8 +4,8 @@ var pressed_buttons = []
 var buttons_level = []
 var level_completed = false
 
-var nb_case_level_1 = 1;
-var nb_case_level_2 = 2;
+var nb_case_level_1 = 5;
+var nb_case_level_2 = 7;
 
 func _ready():
 	await main()
